@@ -1,5 +1,5 @@
 {
-	"name": "db-aztec-parser",
+	"name": "ticket-parser",
 	"version": "0.1.0",
 	"description": "Parse the data contained in Deutsche Bahn's aztec codes",
 	"main": "index.js",
