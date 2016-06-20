@@ -12,13 +12,9 @@ const IDENTIFICATION_TYPES = require('./lib/parse/identification').IDENTIFICATIO
 const parse = function(aztecCodeContents) {
 	return extract.extract(aztecCodeContents).then(parsePayload);
 }
-const parseSync = function(aztecCodeContents) {
-	return parsePayload(extract.extractSync(aztecCodeContents));
-}
 
 module.exports = {
 	parse,
-	parseSync,
 
 	PRODUCT_CLASSES,
 	BAHNCARD_TYPES,

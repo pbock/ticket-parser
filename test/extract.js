@@ -35,23 +35,3 @@ describe('extract', function () {
 		return expect(extract(irrelevantData)).to.be.rejected;
 	})
 })
-
-describe('extractSync', function () {
-	it(`throws if something other than a buffer is passed`, function () {
-		expect(() => extractSync()).to.throw();
-		expect(() => extractSync('foobar')).to.throw();
-		expect(() => extractSync(deflatedBuffer.toString())).to.throw();
-	})
-
-	it(`looks for a zlib-deflated payload and inflates it`, function () {
-		expect(extractSync(deflatedBuffer)).to.deep.equal(inflatedBuffer);
-		expect(extractSync(Buffer.concat([irrelevantData, deflatedBuffer])))
-			.to.deep.equal(inflatedBuffer);
-		expect(extractSync(Buffer.concat([deflatedBuffer, inflatedBuffer])))
-			.to.deep.equal(inflatedBuffer);
-	})
-
-	it(`throws if no zlib payload is found`, function () {
-		expect(() => extractSync(irrelevantData)).to.throw();
-	})
-})

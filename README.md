@@ -12,7 +12,7 @@ TicketParser.parse(dataFromAztecCode)
 	.then(ticket => { /* do something */ })
 ```
 
-The API is asynchronous because it invokes `zlib` to decompress the payload. Use `TicketParser.parseSync()` if you want to work synchronously.
+The API is asynchronous because TicketParser invokes `zlib` to decompress the payload. Parsing is currently done with the buffered payload, but the format lends itself very well to being parsed as a stream.
 
 The returned Promise is rejected if no payload is found, otherwise it resolves with output like this:
 

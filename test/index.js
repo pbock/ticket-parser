@@ -10,8 +10,7 @@ describe('TicketParser', function () {
 		expect(TicketParser).to.have.property('FARE_TYPES');
 		expect(TicketParser).to.have.property('PRODUCT_CLASSES');
 	})
-	it('exposes #parse() and #parseSync() methods', function () {
+	it('exposes a #parse() method', function () {
 		expect(TicketParser.parse).to.be.a('function');
-		expect(TicketParser.parseSync).to.be.a('function');
 	})
 })
