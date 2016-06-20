@@ -1,0 +1,33 @@
+{
+	"name": "db-aztec-parser",
+	"version": "0.1.0",
+	"description": "Parse the data contained in Deutsche Bahn's aztec codes",
+	"main": "index.js",
+	"scripts": {
+		"test": "mocha --recursive"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pbock/db-aztec-parser.git"
+	},
+	"keywords": [
+		"db",
+		"train",
+		"ticket",
+		"parse",
+		"2d",
+		"barcode",
+		"aztec"
+	],
+	"author": "Philipp Bock <p@philippbock.de> (http://philippbock.de/)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/pbock/db-aztec-parser/issues"
+	},
+	"homepage": "https://github.com/pbock/db-aztec-parser#readme",
+	"devDependencies": {
+		"mocha": "*",
+		"chai": "*",
+		"chai-as-promised": "*"
+	}
+}
