@@ -2,7 +2,11 @@
 
 Have you ever travelled with an online ticket from Deutsche Bahn and wondered what information is inside the 2D code? This library tells you. (Note that it doesn't *read* the image of the Aztec code itself; wrapping around [zxing][zxing] is your best bet for that at the moment.)
 
-[!The Aztec code on a home-printed ticket](images/ticket.jpg)
+![The Aztec code on a home-printed ticket](images/ticket.jpg)
+
+```sh
+npm install ticket-parser
+```
 
 ## API
 
