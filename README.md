@@ -1,6 +1,6 @@
 # ticket-parser
 
-Have you ever travelled with an online ticket from Deutsche Bahn and wondered what information is inside the 2D code? This library tells you. (Note that it doesn't *read* the image of the Aztec code itself; wrapping around [zxing][zxing] is your best bet for that at the moment.)
+Have you ever travelled with an online ticket from Deutsche Bahn and wondered what information is inside the 2D code? This library tells you. (Note that it doesn't *read* the image of the Aztec code itself; [ZebraCrossing][zebra-crossing] can help with that.)
 
 ![The Aztec code on a home-printed ticket](images/ticket.jpg)
 
@@ -99,5 +99,5 @@ TicketParser currently ignores extensions such as the "+City Ticket" or "Länder
 
 TicketParser does not and cannot check if a ticket is genuine. Each ticket is cryptographically signed (almost certainly using asymmetric encryption), but the public key is, well, not public. TicketParser currently throws away the signature – if you have the means of verifying it, you probably also have better means of parsing the ticket.
 
-[zxing]: https://github.com/zxing/zxing
+[zebra-crossing]: https://github.com/pbock/zebra-crossing
 [rumpeltux]: https://github.com/rumpeltux/onlineticket/blob/master/onlineticket.py
