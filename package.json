@@ -8,7 +8,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/pbock/db-aztec-parser.git"
+		"url": "git+https://github.com/pbock/ticket-parser.git"
 	},
 	"keywords": [
 		"db",
@@ -22,9 +22,9 @@
 	"author": "Philipp Bock <p@philippbock.de> (http://philippbock.de/)",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/pbock/db-aztec-parser/issues"
+		"url": "https://github.com/pbock/ticket-parser/issues"
 	},
-	"homepage": "https://github.com/pbock/db-aztec-parser#readme",
+	"homepage": "https://github.com/pbock/ticket-parser#readme",
 	"devDependencies": {
 		"mocha": "*",
 		"chai": "*",
