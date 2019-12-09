@@ -99,5 +99,9 @@ TicketParser currently ignores extensions such as the "+City Ticket" or "Länder
 
 TicketParser does not and cannot check if a ticket is genuine. Each ticket is cryptographically signed (almost certainly using asymmetric encryption), but the public key is, well, not public. TicketParser currently throws away the signature – if you have the means of verifying it, you probably also have better means of parsing the ticket.
 
+TicketParser cannot currently parse tickets for local transport (VDV barcodes or _statische Berechtigung_). A [decoder written in C++][vdv-decoder] exists but it isn’t integrated with this library. Help would be welcome; see [the discussion on the related issue][issue2].
+
 [zebra-crossing]: https://github.com/pbock/zebra-crossing
 [rumpeltux]: https://github.com/rumpeltux/onlineticket/blob/master/onlineticket.py
+[vdv-decoder]: https://github.com/KDE/kitinerary/tree/master/src/vdv
+[issue2]: https://github.com/pbock/ticket-parser/issues/2
